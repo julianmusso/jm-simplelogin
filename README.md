@@ -1,38 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SimpleApp
 
-## Getting Started
+Esta es una aplicación básica que utiliza Next JS 13, Tailwind y Next-Auth para permitir a los usuarios iniciar sesión con Google y ver su nombre y correo electrónico.
 
-First, run the development server:
+## Requisitos previos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Antes de ejecutar esta aplicación, asegúrate de haber configurado las siguientes variables de entorno:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `GOOGLE_ID`: El ID de cliente de Google que se utiliza para autenticar a los usuarios.
+- `GOOGLE_SECRET`: El secreto de cliente de Google que se utiliza para autenticar a los usuarios.
+- `NEXT_PUBLIC_WEB_URL`: La URL pública de la aplicación.
+- `NEXTAUTH_URL`: La URL pública de autenticación de Next-Auth.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Cómo iniciar la aplicación
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1. Clona este repositorio en tu máquina local.
+2. Ejecuta `npm install` para instalar todas las dependencias.
+3. Crea un archivo `.env.local` en el directorio raíz del proyecto y agrega las variables de entorno mencionadas anteriormente.
+4. Ejecuta `npm run dev` para iniciar la aplicación en modo de desarrollo.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Cómo utilizar la aplicación
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Accede a la URL de la aplicación.
+2. Haz clic en el botón "Iniciar sesión con Google".
+3. Inicia sesión con tu cuenta de Google.
+4. Verás tu nombre y correo electrónico en la pantalla de inicio de sesión.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+¡Disfruta de la aplicación!
